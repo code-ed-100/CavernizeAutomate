@@ -189,9 +189,6 @@ namespace CavernizeAutomate
                 progress.Report($"Processing file {i + 1} of {FilesToProcess.Count}:\n{inputFileName}");
 
                 // build the command line argument for Cavernize
-                // example command line:
-                // "C:\Program Files\VoidX\Cavernize\CavernizeGUI.exe" -i "C:\LocalFiles\Music\Ripping\Blu Ray\Extracted\Flesh + Blood\MKA\Output-001.mka"
-                // -f PCM_LE -t "2.0" -f24 --render-gain 2 -o "C:\LocalFiles\Music\Ripping\Blu Ray\Extracted\Flesh + Blood\Rendered\Output-001.wav"
                 StringBuilder sbCavernizeCmd = new StringBuilder();
                 sbCavernizeCmd.Append("-i \"");
                 sbCavernizeCmd.Append(FilesToProcess[i]);
